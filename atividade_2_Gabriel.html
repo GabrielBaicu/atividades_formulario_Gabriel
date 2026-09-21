@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifeste sua opinião</title>
+</head>
+<body>
+    <h1>Pesquisa de Opinião</h1>
+    <p>Nessa pesquisa você será questionado sobre o produto X. Esse produto é vendido em todo o pais nas perfumarias, lojas de departamento, internet entre outros. Responda as questões abaixo de acordo com sua opinião</p>
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+        <form>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome"><br><br>
+
+            <input type="number" id="idade" name="idade" placeholder="Digite a sua idade"><br><br>
+
+            <input type="email" id="email" name="email" placeholder="Digite o seu email"><br><br>
+
+            Data de Nascimento:<br> <input type="date" id="nascimento" name="nascimento"><br><br>
+            Digite uma senha para acessar os dados da pesquisa posteriormente:<br> <input type="password" id="senha" name="senha" placeholder="Digite uma senha"><br><br>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Aspecto do produto</legend>
+        Selecione a cor do produto após 6 meses de uso:<br>
+        <input type="color" id="cor" name="cor"><br><br>
+        Adicione uma foto do seu produto<br>
+         <input type="file" name="arquivo">
+    </fieldset>
+    <fieldset>
+        <legend>Opinião quanto a utilização</legend>
+        Você gosta do cheiro do produto?<br>
+        <input type="radio" id="sim" name="cheiro"> Gosto muito<br>
+        <input type="radio" id="sim" name="cheiro"> Gosto<br>
+        <input type="radio" id="sim" name="cheiro"> sei lá<br>
+        <input type="radio" id="sim" name="cheiro"> não<br>
+        <input type="radio" id="sim" name="cheiro"> sangra o nariz<br><br>
+        Marque as características que mais gosta do produto?<br>
+        <input type="checkbox" id="nota1" name="nota"> Fixação<br>
+        <input type="checkbox" id="nota2" name="nota"> Textura<br>
+        <input type="checkbox" id="nota3" name="nota"> Cheiro<br>
+        <input type="checkbox" id="nota3" name="nota"> Cor<br>
+        <input type="checkbox" id="nota3" name="nota"> Embalagem<br>
+    </fieldset>
+    <fieldset>
+        <legend>Nivel de satisfação</legend>
+        Coloque nessa escala o seu nivel de satisfação geral do produto<br>
+         <input type="range" name="idade" min="0" max="100" value="50">
+    </fieldset>
+     <fieldset>
+        <legend>Opiniões</legend>
+        Digite abaixo sua opinião sobre o produto:<br>
+        <textarea></textarea>
+    </fieldset>
+    <br>
+    <button type="submit">Gravar respostas</button>
+</body>
+</html>
