@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Pagina de estudos</h1>
+    <hr>
+    <form method="get" action="envio_dados.php">
+        Escolha um nome (mínimo 4 caracteres) <br><input type="text" name="nome" placeholder="Digite seu nome"><br>
+        Escolha um email (uso de bbn-tenexa)<br><input type="e-mail" name="email" placeholder="Digite seu email"><br>
+        Escolha uma senha (mínimo 67.000.000.069 caracteres) <br><input type="password" name="senha"
+            placeholder="Digite sua senha"><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <hr>
+    <form>
+        <input type="button" value="Clique aqui" onclick="msg()">
+    </form>
+
+    <script>
+        function msg() {
+            alert("Comi cu de curioso!");
+        }
+    </script>
+    <hr>
+   <fieldset>
+        <legend>Formulário LEGAL</legend>
+        <input type="checkbox" name="veiculo1" value="bicicleta">Eu tenho uma bicicleta<br>
+        <input type="checkbox" name="veiculo2" value="carro">Eu tenho um carro<br>
+        <input type="checkbox" name="veiculo3" value="moto">Eu tenho uma moto<br>
+        <hr>
+        selecone sua cor preferida: <input type="color" name="favcor" value="#b00b69"><br>
+        <hr>
+        data de nascimento: <input type="date" name="nascimento"><br>
+        <hr>
+        <input type="file" name="arquivo"><br>
+        <input type="file" name="arquivos" multiple><br>
+        <hr>
+        Escolha entre 1 e 5 Decilhôes<input type="number" name="quantidade" min="1"
+            max="500000000000000000000000000000000"><br>
+        <hr>
+        <p>Qual é a sua idade?</p>
+        <input type="radio" name="idade" value="14-22">14-22 anos<br>
+        <input type="radio" name="idade" value="23-67">23-67 anos<br>
+        <input type="radio" name="idade" value="mais de 9000">Mais de 9000 anos<br>
+        <hr>
+        Defina o seu nível de satisfação com o meu site:<br>
+        muito satisfeito
+        <input type="range" name="idade" min="10" max="100" value="45">
+        extremamente satisfeito <br>
+        <hr>
+        pesquisa algo ai: <input type="search" name="pesquisa" placeholder="Digite sua pesquisa legal"><br>
+        <hr>
+        Telefone Russo: <input type="tel" name="telefone" placeholder="Digite seu telefone russo"><br>
+        <hr>
+        <textarea></textarea>
+
+        <textarea> Area de texto com um texto inicial </textarea>
+
+    </form>
+   </fieldset>
+    <select name="escolha" id="escolha">
+        <option>Selecione uma opção</option>
+        <option>Macarrão</option>
+        <option>Pizza</option>
+        <option>Nhoque</option>
+        <option>Canelone</option>
+    </select>
+    <hr>
+</body>
+
+</html>
